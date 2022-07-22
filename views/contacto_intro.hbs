@@ -1,0 +1,35 @@
+
+<div class="container">
+     <div class="text-center m-5">
+        <hr>
+        <h1>{{titulo}}</h1>
+        <hr>
+    </div>
+
+  <table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th> Nombre </th>
+            <th> Apellido </th>
+            <th> Telefono </th>
+            <th> Email </th>
+            <th> Diagnostico </th>
+            <th> Consulta </th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each results}} 
+        <tr>
+            <td>{{nombre_paciente}}</td>
+            <td>{{apellido_paciente}}</td>
+            <td>{{telefono_paciente}}</td>
+            <td>{{email_paciente}}</td>
+            <td>{{diagnostico_paciente}}</td>
+            <td>{{consulta_paciente}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+  </table>
+</div>
+
+ 
